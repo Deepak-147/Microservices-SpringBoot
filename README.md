@@ -1,2 +1,2 @@
-# Spring-Microservices
-Repository created while learning Spring Microservices
+# Microservices-SpringBoot
+Repository created while learning Microservices with Spring Boot
