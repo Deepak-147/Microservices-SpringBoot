@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="02-user-service-basic/src/main/java"/>
+	<classpathentry kind="src" path="02-user-service-basic/src/test/java"/>
+	<classpathentry kind="src" path="03-user-service-with-exception-handling/src/main/java"/>
+	<classpathentry kind="src" path="03-user-service-with-exception-handling/src/test/java"/>
+	<classpathentry kind="src" path="04-user-service-with-validation/src/main/java"/>
+	<classpathentry kind="src" path="04-user-service-with-validation/src/test/java"/>
+	<classpathentry kind="src" path="05-user-service-with-swagger-documentation/src/main/java"/>
+	<classpathentry kind="src" path="05-user-service-with-swagger-documentation/src/test/java"/>
+	<classpathentry kind="src" path="06-user-service-with-content-negotiation-xml-support/src/main/java"/>
+	<classpathentry kind="src" path="06-user-service-with-content-negotiation-xml-support/src/test/java"/>
+	<classpathentry kind="src" path="07-user-service-with-spring-boot-actuator/src/main/java"/>
+	<classpathentry kind="src" path="07-user-service-with-spring-boot-actuator/src/test/java"/>
+	<classpathentry kind="src" path="08-user-service-with-h2-connection-using-hibernate/src/main/java"/>
+	<classpathentry kind="src" path="08-user-service-with-h2-connection-using-hibernate/src/test/java"/>
+	<classpathentry kind="src" path="09-user-service-with-mysql-connection-using-hibernate/src/main/java"/>
+	<classpathentry kind="src" path="09-user-service-with-mysql-connection-using-hibernate/src/test/java"/>
+	<classpathentry kind="src" path="10-user-service-with-spring-security-basic-authentication/src/main/java"/>
+	<classpathentry kind="src" path="10-user-service-with-spring-security-basic-authentication/src/test/java"/>
+	<classpathentry kind="lib" path="02-user-service-basic/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="03-user-service-with-exception-handling/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="04-user-service-with-validation/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="05-user-service-with-swagger-documentation/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="06-user-service-with-content-negotiation-xml-support/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="07-user-service-with-spring-boot-actuator/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="08-user-service-with-h2-connection-using-hibernate/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="09-user-service-with-mysql-connection-using-hibernate/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="10-user-service-with-spring-security-basic-authentication/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="02-user-service-basic/target/classes"/>
+</classpath>
