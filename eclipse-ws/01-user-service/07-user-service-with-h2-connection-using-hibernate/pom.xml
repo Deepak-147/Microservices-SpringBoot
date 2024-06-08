@@ -38,6 +38,7 @@
 			<optional>true</optional>
 		</dependency>
 		
+		<!-- H2 database support-->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>

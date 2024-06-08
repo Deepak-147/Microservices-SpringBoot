@@ -66,7 +66,7 @@
 		</dependency>
 		
 		<!-- For Actuator 
-			Access at: http://localhost:8080/actuator/
+			Access at: http://localhost:8080/actuator
 		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
