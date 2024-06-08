@@ -3,7 +3,7 @@
 **Table of contents:**
  1. [Google Kubernetes Engine (GKE)](#gke)
  2. [How GKE works](#how-gke)
- 3. [Basic terminology)](#basics)
+ 3. [Basic terminology](#basics)
  4. [Creating Kubernetes Cluster](#create-cluster)
  5. [Connecting to a Kubernetes Cluster](#connect-cluster)
     1. [Connecting using Google Cloud Shell](#connect-gcloud-shell)
