@@ -39,18 +39,22 @@ The combination of master nodes and worker nodes forms a **cluster**
 
 - **Service** allows your application to receive traffic through a permanent address. It provides a constant frontend url for our consumers, irrespective of the changes happening in backend url due to pod changes. Load Balancer is a type of service.
 
-![Terms](/assets/images/container.png "Terms")
+    ![Terms](/assets/images/container.png "Terms")
 
 <a id="create-cluster"></a>
 
 ## 4. Creating Kubernetes Cluster
+
 ![Create Cluster](/assets/images/create-cluster.png "Create Cluster")
+
+<br>
 
 ![Create Cluster2](/assets/images/create-cluster2.png "Create Cluster2")
 
 <a id="connect-cluster"></a>
 
 ## 5. Connecting to a Kubernetes Cluster
+
 ![Connect Cluster](/assets/images/connect-cluster.png "Connect Cluster")
 
 ```gcloud container clusters get-credentials <cluster-name> --region <region-name> --project <project-id>```
@@ -58,6 +62,7 @@ The combination of master nodes and worker nodes forms a **cluster**
 <a id="connect-gcloud-shell"></a>
 
 ### 1. Connecting using Google Cloud Shell
+
 ![Connect Cluster using Cloud shell](/assets/images/connect-using-cloud-shell.png "Connect Cluster using cloud shell")
 
 <a id="kubectl"></a>
@@ -66,73 +71,75 @@ The combination of master nodes and worker nodes forms a **cluster**
 
 - **1. Check version:**
 
-```kubectl version```
+    ```kubectl version```
 
-![kubectl version](/assets/images/kubectl-version.png "Kubectl version")
+    ![kubectl version](/assets/images/kubectl-version.png "Kubectl version")
 
 - **2. Create Deployment:**
 
-```kubectl create deployment <deployment name> --image=<image name>```
+    ```kubectl create deployment <deployment name> --image=<image name>```
 
-![Create deployment](/assets/images/create-deployment.png "Create Deployment")
+    ![Create deployment](/assets/images/create-deployment.png "Create Deployment")
 
 - **3. Expose Deployment:**
 
-```kubectl expose deployment <deployment name> --type=<type> --port=<port name>```
+    ```kubectl expose deployment <deployment name> --type=<type> --port=<port name>```
 
-![Expose deployment](/assets/images/expose-deployment.png "Expose Deployment")
+    ![Expose deployment](/assets/images/expose-deployment.png "Expose Deployment")
 
 - **4. View Workloads:**
 
-![Workloads](/assets/images/workloads.png "Workloads")
+    ![Workloads](/assets/images/workloads.png "Workloads")
 
-![Workloads2](/assets/images/workloads2.png "Workloads2")
+    <br>
+
+    ![Workloads2](/assets/images/workloads2.png "Workloads2")
 
 - **5. Verify Endpoints:**
 
-![verify endpoints](/assets/images/verify-endpoints.png "Verify endpoints")
+    ![verify endpoints](/assets/images/verify-endpoints.png "Verify endpoints")
 
 - **6. get:**
 
-```kubectl get <type>```
+    ```kubectl get <type>```
 	
-Where type can be event(s), pod(s), replicaset(s), deployment(s), service(s), all
+    Where type can be event(s), pod(s), replicaset(s), deployment(s), service(s), all
 
-with options:
-```kubectl get <type> -o wide```
+    with options:
+    ```kubectl get <type> -o wide```
 
-sort events by creation time:
-```kubectl get events --sort-by=.metadata.creationTimestamp```
+    sort events by creation time:
+    ```kubectl get events --sort-by=.metadata.creationTimestamp```
 
-![Get command](/assets/images/kubectl-get.png "Get command")
+    ![Get command](/assets/images/kubectl-get.png "Get command")
 
 - **7. explain:**
 
-```kubectl explain <type>```
-	
-Where type can be event(s), pod(s), replicaset(s), deployment(s), service(s)
+    ```kubectl explain <type>```
+        
+    Where type can be event(s), pod(s), replicaset(s), deployment(s), service(s)
 
 - **8. describe:**
 
-```kubectl describe pod <pod-name>```
+    ```kubectl describe pod <pod-name>```
 
 - **9. delete:**
 
-```kubectl delete pods <pod name>```
+    ```kubectl delete pods <pod name>```
 	
-Deletes everything (Deployments, services, pods, replicaset ...etc) about the given app-name
-	
-```kubectl delete all -l app=<app-name>```
+    Deletes everything (Deployments, services, pods, replicaset ...etc) about the given app-name
+        
+    ```kubectl delete all -l app=<app-name>```
 
-![Delete](/assets/images/delete-pods.png "Delete")
+    ![Delete](/assets/images/delete-pods.png "Delete")
 
-Even after deleting the pod, the replicaset made sure to have sufficient number of pods running. So it sprung up another pod.
+    Even after deleting the pod, the replicaset made sure to have sufficient number of pods running. So it sprung up another pod.
 
 - **10. scale deployment:**
 	
-```kubectl scale deployment <deployment name> --replicas=<number of replicas>```
+    ```kubectl scale deployment <deployment name> --replicas=<number of replicas>```
 
-![Scale](/assets/images/scale-deployment.png "Scale")
+    ![Scale](/assets/images/scale-deployment.png "Scale")
 
 <a id="local"></a>
 
