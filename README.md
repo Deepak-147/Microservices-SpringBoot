@@ -36,19 +36,19 @@ The combination of master nodes and worker nodes forms a **cluster**
 ![Connect Cluster using Cloud shell](/assets/images/connect-using-cloud-shell.png "Connect Cluster using cloud shell")
 
 ### Interacting with cluster using Kubectl (Kubernetes Controller, command line interface)
-1. Check version:
+**1. Check version:**
 
 ```kubectl version```
 
 ![kubectl version](/assets/images/kubectl-version.png "Kubectl version")
 
-2. Create Deployment:
+**2. Create Deployment:**
 
 ```kubectl create deployment <deployment name> --image=<image name>```
 
 ![Create deployment](/assets/images/create-deployment.png "Create Deployment")
 
-3. Expose Deployment:
+**3. Expose Deployment:**
 
 ```kubectl expose deployment <deployment name> --type=<type> --port=<port name>```
 
@@ -64,7 +64,7 @@ The combination of master nodes and worker nodes forms a **cluster**
 
 ![verify endpoints](/assets/images/verify-endpoints.png "Verify endpoints")
 
-4. get:
+**4. get:**
 
 ```kubectl get <type>```
 	
@@ -78,17 +78,17 @@ sort events by creation time:
 
 ![Get command](/assets/images/kubectl-get.png "Get command")
 
-5. explain:
+**5. explain:**
 
 ```kubectl explain <type>```
 	
 Where type can be event(s), pod(s), replicaset(s), deployment(s), service(s)
 
-6. describe:
+**6. describe:**
 
 ```kubectl describe pod <pod-name>```
 
-7. delete:
+**7. delete:**
 
 ```kubectl delete pods <pod name>```
 	
@@ -100,7 +100,7 @@ Deletes everything (Deployments, services, pods, replicaset ...etc) about the gi
 
 Even after deleting the pod, the replicaset made sure to have sufficient number of pods running. So it sprung up another pod.
 
-8. scale deployment:
+**8. scale deployment:**
 	
 ```kubectl scale deployment <deployment name> --replicas=<number of replicas>```
 
